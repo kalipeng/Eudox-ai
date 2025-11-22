@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import ChatPage from './ChatPage';
+import SelectCompanies from './SelectCompanies';
+import AnalysisResults from './AnalysisResults';
 
 const baseCard = {
   title: 'North America SaaS Companies',
@@ -18,8 +21,8 @@ const cardData = Array.from({ length: 6 }, (_, index) => ({
   id: `card-${index}`,
 }));
 
-const ProjectCard = ({ title, tags, metrics, status, updatedAt }) => (
-  <article className="project-card">
+const ProjectCard = ({ title, tags, metrics, status, updatedAt, onClick }) => (
+  <article className="project-card" onClick={onClick} style={{ cursor: 'pointer' }}>
     <div className="project-card__tags">
       {tags.map((tag) => (
         <span key={tag} className="project-card__tag">
@@ -31,7 +34,7 @@ const ProjectCard = ({ title, tags, metrics, status, updatedAt }) => (
     <div className="project-card__thumbnail" />
     <div className="project-card__meta">
       <span>{updatedAt}</span>
-      <button aria-label="Project options" className="icon-button">
+      <button aria-label="Project options" className="icon-button" onClick={(e) => e.stopPropagation()}>
         <span className="icon-dots" />
       </button>
     </div>
@@ -64,6 +67,25 @@ const Sidebar = () => (
 
 function App() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState('home');
+
+  if (currentPage === 'results') {
+    return <AnalysisResults onBack={() => setCurrentPage('chat')} />;
+  }
+
+  if (currentPage === 'select') {
+    return <SelectCompanies onBack={() => setCurrentPage('chat')} />;
+  }
+
+  if (currentPage === 'chat') {
+    return (
+      <ChatPage
+        onBack={() => setCurrentPage('home')}
+        onNavigateToSelect={() => setCurrentPage('select')}
+        onNavigateToResults={() => setCurrentPage('results')}
+      />
+    );
+  }
 
   return (
     <div className="app-shell">
@@ -102,7 +124,7 @@ function App() {
         <section className="content">
           <div className="cards-grid">
             {cardData.map((card) => (
-              <ProjectCard key={card.id} {...card} />
+              <ProjectCard key={card.id} {...card} onClick={() => setCurrentPage('chat')} />
             ))}
           </div>
         </section>
