@@ -23,10 +23,24 @@
   color: white;
 }
 
+.signin-brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.signin-logo {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
 .signin-brand {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin: 0;
   color: white;
 }
 

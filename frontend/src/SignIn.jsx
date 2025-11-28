@@ -31,7 +31,10 @@ function SignIn() {
     <div className="signin-container">
       <div className="signin-left">
         <div className="signin-left-content">
-          <h1 className="signin-brand">Eudox AI</h1>
+          <div className="signin-brand-container">
+            <img src="/logo/logo-small.svg" alt="Eudox AI Logo" className="signin-logo" />
+            <h1 className="signin-brand">Eudox AI</h1>
+          </div>
           <h2 className="signin-welcome">Welcome Back to Eudox AI</h2>
           <div className="signin-preview">
             <div className="preview-mockup">
