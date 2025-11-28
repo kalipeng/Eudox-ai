@@ -8,6 +8,10 @@ This folder contains the logo files for Eudox AI.
 - `logo-large.svg` - Large version of the logo (for landing pages, sign-in)
 - `logo-small.png` - PNG version of small logo
 - `logo-large.png` - PNG version of large logo
+<img width="940" height="788" alt="logo pure logo no text " src="https://github.com/user-attachments/assets/ac377044-de05-4a2e-8c29-9824ec94434d" />
+
+<img width="940" height="788" alt="eudox ai" src="https://github.com/user-attachments/assets/4544c4ba-e50f-407c-a470-472c3fa47886" />
+
 
 ## Usage
 
