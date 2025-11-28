@@ -1,0 +1,552 @@
+.signin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.signin-left {
+  flex: 1;
+  min-width: 50%;
+  background: linear-gradient(135deg, #5fc3d8 0%, #4db8d1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.signin-left-content {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.signin-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.signin-welcome {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.signin-preview {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.preview-mockup {
+  width: 100%;
+}
+
+.mockup-header {
+  background: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.mockup-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.status-icon {
+  font-size: 1rem;
+}
+
+.mockup-content {
+  padding: 1.5rem;
+  background: white;
+}
+
+.mockup-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+.check-icon {
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.mockup-file {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+}
+
+.file-info {
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.file-meta {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.complete-badge {
+  padding: 0.25rem 0.75rem;
+  background: #5fc3d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.file-size {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.mockup-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.mockup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.mockup-table thead {
+  background: #f9fafb;
+}
+
+.mockup-table th {
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.mockup-table td {
+  padding: 0.5rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.mockup-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-market {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-rising {
+  background: #e0f4f7;
+  color: #0891b2;
+}
+
+.badge-stage {
+  background: #e0f4f7;
+  color: #0891b2;
+}
+
+.mockup-footer {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mockup-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.download-btn,
+.view-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.download-btn {
+  background: #5fc3d8;
+  color: white;
+}
+
+.download-btn:hover {
+  background: #4db8d1;
+}
+
+.view-btn {
+  background: white;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+}
+
+.view-btn:hover {
+  background: #f9fafb;
+}
+
+.updated-time {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.signin-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: white;
+}
+
+.signin-form-container {
+  max-width: 440px;
+  width: 100%;
+}
+
+.signin-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.signin-subtitle {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.signin-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #5fc3d8;
+  box-shadow: 0 0 0 3px rgba(95, 195, 216, 0.1);
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  color: #9ca3af;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.checkbox-label input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.forgot-link {
+  color: #5fc3d8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #5fc3d8 0%, #4db8d1 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.signin-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(95, 195, 216, 0.3);
+}
+
+.signin-button:active {
+  transform: translateY(0);
+}
+
+.signin-divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.signin-divider::before,
+.signin-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 80px);
+  height: 1px;
+  background-color: #e5e7eb;
+}
+
+.signin-divider::before {
+  left: 0;
+}
+
+.signin-divider::after {
+  right: 0;
+}
+
+.social-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.2s;
+}
+
+.social-button:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.signin-footer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.signup-link {
+  color: #5fc3d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.security-notice {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.security-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.security-notice strong {
+  display: block;
+  color: #166534;
+  margin-bottom: 0.25rem;
+}
+
+.security-notice p {
+  color: #16a34a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .signin-preview {
+    transform: scale(0.9);
+    transform-origin: top;
+  }
+}
+
+@media (max-width: 968px) {
+  .signin-container {
+    flex-direction: column;
+  }
+
+  .signin-left {
+    min-height: 400px;
+    padding: 2rem;
+  }
+
+  .signin-welcome {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .signin-preview {
+    transform: scale(0.75);
+    transform-origin: top;
+  }
+
+  .mockup-table {
+    font-size: 0.65rem;
+  }
+
+  .mockup-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .signin-left {
+    min-height: 250px;
+  }
+
+  .signin-welcome {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .signin-preview {
+    transform: scale(0.65);
+    transform-origin: top;
+  }
+
+  .mockup-content {
+    padding: 1rem;
+  }
+
+  .mockup-table {
+    font-size: 0.6rem;
+  }
+}
+
