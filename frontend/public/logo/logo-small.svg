@@ -1,18 +1,2 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Outer ring segments -->
-  <path d="M32 8 A24 24 0 0 1 50 18 L44 22 A16 16 0 0 0 32 16 Z" fill="#a8e6cf"/>
-  <path d="M50 18 A24 24 0 0 1 56 32 L48 32 A16 16 0 0 0 44 22 Z" fill="#5fc3d8"/>
-  <path d="M56 32 A24 24 0 0 1 50 46 L44 42 A16 16 0 0 0 48 32 Z" fill="#4db8d1"/>
-  <path d="M50 46 A24 24 0 0 1 32 56 L32 48 A16 16 0 0 0 44 42 Z" fill="#5fc3d8"/>
-  <path d="M32 56 A24 24 0 0 1 14 46 L20 42 A16 16 0 0 0 32 48 Z" fill="#a8e6cf"/>
-  <path d="M14 46 A24 24 0 0 1 8 32 L16 32 A16 16 0 0 0 20 42 Z" fill="#5fc3d8"/>
-  <path d="M8 32 A24 24 0 0 1 14 18 L20 22 A16 16 0 0 0 16 32 Z" fill="#4db8d1"/>
-  <path d="M14 18 A24 24 0 0 1 32 8 L32 16 A16 16 0 0 0 20 22 Z" fill="#5fc3d8"/>
-  
-  <!-- Center circle -->
-  <circle cx="32" cy="32" r="8" fill="white"/>
-  
-  <!-- Diagonal stripe -->
-  <rect x="24" y="-8" width="16" height="80" fill="#5fc3d8" transform="rotate(45 32 32)"/>
-</svg>
+
 
